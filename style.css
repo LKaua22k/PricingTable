@@ -52,7 +52,7 @@ body{
     font-size: 1.8rem;
     line-height: 2.5rem;
     font-weight: 400;
-    width: 55.3rem;
+    width: auto;
     text-align: center;
 }
 /* Main */
@@ -71,7 +71,7 @@ main{
     background: #FFFFFF;
     box-shadow: 0px 1px 2px rgba(142, 150, 185, 0.25);
     border-radius: 0.8rem;
-    padding: 3rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     margin-top: -20rem;
@@ -234,4 +234,21 @@ footer{
 }
 .footer__text{
     color: var(--blue);
+}
+
+@media (max-width: 359px) {
+    .header__content__title{
+        font-size: 2.8rem;
+    }
+}
+
+
+@media (max-width: 1056px) {
+    main{
+        flex-direction: column;
+        gap: 24rem;
+    }
+        .header__content__title{
+        font-size: 3.8rem;
+    }
 }
